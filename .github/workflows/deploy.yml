@@ -57,7 +57,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/etms-fe  # Updated to your project name
+          folder: etms-fe/dist/etms-fe  # Updated to your project name
           token: ${{ secrets.MY_SECRET }}
 
       # Option 2: Deploy to Firebase Hosting (Uncomment to use)
