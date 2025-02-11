@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: angular-build
-          path: dist/etms-fe  # Change to match your Angular app build path
+          path: etms-fe/dist/etms-fe  # Change to match your Angular app build path
 
   deploy:
     needs: build
@@ -57,7 +57,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/etms-fe  # Updated to your project name
+          folder: etms-fe/dist/etms-fe  # Updated to your project name
           token: ${{ secrets.MY_SECRET }}
 
       # Option 2: Deploy to Firebase Hosting (Uncomment to use)
